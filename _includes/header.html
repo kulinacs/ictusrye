@@ -1,0 +1,20 @@
+<header>
+  <nav class="navbar">
+	<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+	<div class="collapse navbar-toggleable-xs" id="navbar-header">
+	  <ul class="nav navbar-nav">
+	    {% for page in site.pages %}
+        {% if page.title %}
+        <li class="nav-item">
+		  <a class="nav-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+		</li>
+        {% endif %}
+        {% endfor %}
+	  </ul>
+	</div>
+  </nav>
+  <hr class="header-hr"></hr>
+  <div class="header-main">
+  	<a class="site-title-link" href="{{ "/" | relative_url }}"><h1 class="site-title">{{ site.title | escape }}</h1></a>
+  </div>
+</header>

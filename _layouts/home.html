@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="jumbotron jumbotron-fluid">
+	<div class="container">
+	  {{ site.description | escape }}
+	</div>
+  </div>	
+  
+  {% for post in site.posts limit:10 %}
+  <h2 class="listing-title"><a href="{{ post.url | relative_url }}" class="listing-link">{{ post.title | escape }}</a></h2>
+  <p class="meta text-muted">
+	<span class="date">{{ post.date | date_to_long_string }}</span>
+  </p>
+  <div class="excerpt">
+	{{ post.excerpt }}
+  </div>
+  {% unless forloop.last %}
+  <hr class="listing-hr"></hr>
+  {% endunless %}
+  {% endfor %}
+  
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>

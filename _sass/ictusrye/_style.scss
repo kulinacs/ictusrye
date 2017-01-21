@@ -1,0 +1,102 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $background-color;
+  color: $font-color;
+}
+
+.jumbotron {
+  background-color: lighten($background-color, 5%);
+  border: 1px solid;
+  border-color: lighten($background-color, 15%);
+  border-radius: 4px;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+.navbar-brand {
+  color: $font-color;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: darken($font-color, 20%);
+}
+
+.navbar-nav .nav-link {
+  color: $font-color;
+  font-size: 1.2rem;
+  padding-bottom: .4rem;
+  padding-top: .4rem;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+  color: darken($font-color, 20%);
+}
+
+.header-hr {
+  background: $font-color;
+  background-image: linear-gradient(to right, $background-color,
+									lighten($background-color, 20%),
+									$background-color);
+  border: 0;
+  height: 1px;
+  margin-top: 0;
+}
+
+.header-main {
+  margin: auto;
+  padding-bottom: .5rem;
+}
+
+.site-title {
+  color: $font-color;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.site-title:hover {
+  color: darken($font-color, 20%);
+}
+
+.site-title-link:hover {
+  text-decoration: none;
+}
+
+.listing-title {
+  margin-bottom: .25rem;
+}
+
+.listing-link {
+  color: $font-color;
+  margin-bottom: .25rem;
+  text-decoration: none;
+}
+
+.listing-link:hover {
+  color: darken($font-color, 20%);
+  text-decoration: none;
+}
+
+.listing-hr {
+  background: $font-color;
+  background-image: linear-gradient(to right, $background-color,
+									lighten($background-color, 5%),
+									$background-color);
+  border: 0;
+  height: 1px;
+  margin-top: 0;
+}
+
+.meta {
+  margin-bottom: .25rem;
+}

@@ -1,0 +1,11 @@
+$background-color: #222;
+$font-color: #eee;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials.
+@import 'ictusrye/style';
