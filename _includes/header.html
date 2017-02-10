@@ -16,7 +16,7 @@
   <hr class="header-hr"></hr>
   <div class="header-main">
 	{% if site.logo %}
-  	<a class="site-title-link" href="{{ "/" | relative_url }}"><img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}"  style="margin:auto; display: block;"></a>
+  	<a class="site-title-link" href="{{ "/" | relative_url }}"><img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}"  class="site-logo" style=""></a>
 	{% else %}
   	<a class="site-title-link" href="{{ "/" | relative_url }}"><h1 class="site-title">{{ site.title | escape }}</h1></a>
 	{% endif %}
