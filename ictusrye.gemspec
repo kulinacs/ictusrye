@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "ictusrye"
-  spec.version       = "0.2.0"
+  spec.version       = "0.3.0"
   spec.authors       = ["Nicklaus McClendon"]
   spec.email         = ["nicklaus@kulinacs.com"]
 
