@@ -1,15 +1,17 @@
 <header>
-  <nav class="navbar">
-	<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
-	<div class="collapse navbar-toggleable-xs" id="navbar-header">
-	  <ul class="nav navbar-nav">
-	    {% for page in site.pages %}
-        {% if page.title %}
-        <li class="nav-item">
-		  <a class="nav-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav mr-auto">
+		{% for nav_page in site.pages %}
+		{% if nav_page.title %}
+		<li class="nav-item">
+		  <a class="nav-link" href="{{ nav_page.url | relative_url }}">{{ nav_page.title | escape }}</a>
 		</li>
-        {% endif %}
-        {% endfor %}
+		{% endif %}
+		{% endfor %}
 	  </ul>
 	</div>
   </nav>
