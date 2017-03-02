@@ -1,5 +1,6 @@
 $background-color: #222;
 $font-color: #eee;
+$link-color: #3eb42a; 
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {

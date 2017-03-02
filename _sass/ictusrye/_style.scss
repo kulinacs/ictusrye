@@ -7,6 +7,10 @@ body {
   color: $font-color;
 }
 
+a {
+  color: $link-color;
+}
+
 .bg-inverse{
   background-color: $background-color !important;
 }
@@ -97,4 +101,28 @@ body {
 
 .meta {
   margin-bottom: .25rem;
+}
+
+.page-link {
+  color: $font-color;
+  background-color: lighten($background-color, 5%);
+  border-color: lighten($background-color, 15%);
+}
+
+.page-link:focus, .page-link:hover {
+  color: $font-color;
+  background-color: lighten($background-color, 15%);
+  border-color: lighten($background-color, 15%);
+}
+
+.page-item.disabled .page-link {
+  color: darken($font-color, 25%);
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: lighten($background-color, 5%);
+  border-color: lighten($background-color, 15%);
+}
+
+.pagination {
+  margin-top: 1rem;
 }
