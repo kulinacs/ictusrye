@@ -11,7 +11,19 @@ a {
   color: $link-color;
 }
 
-.bg-inverse{
+a:focus, a:hover {
+  color: darken($link-color, 15%);
+  text-decoration: underline;
+}
+
+code {
+  color: $link-color;
+  background-color: lighten($background-color, 5%);
+  border: 1px solid;
+  border-color: lighten($background-color, 15%);
+}
+
+.bg-inverse {
   background-color: $background-color !important;
 }
 
